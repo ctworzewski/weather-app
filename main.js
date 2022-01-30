@@ -25,6 +25,9 @@ function getInfoData() {
             console.log(data);
             console.log(data.main.temp);
 
+            const times = new Date();
+            document.getElementById('times').innerHTML = times.getHours() + ':'+ times.getMinutes() + ':' + times.getSeconds();
+
             const city = document.getElementById('city');
             city.innerHTML = data.name;
 
